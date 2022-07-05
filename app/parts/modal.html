@@ -1,0 +1,62 @@
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1">
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-1-title">Leave a request</h2>
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+			</header>
+			<form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'sendemail.php')">
+				<main class="modal__content" id="modal-1-content">
+					<input class="form-input modal__input" type="text" name="name" placeholder="Your name..." />
+					<input class="form-input modal__input" type="text" name="phone" placeholder="Your phone number..." required />
+					<textarea class="form-input modal__input" name="message" placeholder="Message..."></textarea>
+				</main>
+				<footer class="modal__footer">
+					<button class="button"><span class="button__text">Send</span></button>
+				</footer>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1">
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-1-title">Policy</h2>
+			</header>
+			<main class="modal__content" id="modal-1-content">
+				<a href="./politica_de.html" target="_blank">Datenschutzerklärung</a>
+			</main>
+			<footer class="modal__footer">
+				<div class="button" data-micromodal-close><span class="button__text">confirmation</span></div>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<script>
+	const callBackThanks = document.querySelector('.callback__thanks')
+	function send(event, php) {
+		event.preventDefault ? event.preventDefault() : (event.returnValue = false)
+		var req = new XMLHttpRequest()
+		req.open('POST', php, true)
+		req.onload = function () {
+			if (req.status >= 200 && req.status < 400) {
+				json = JSON.parse(this.response)
+				if (json.result == 'success') {
+					event.target.reset()
+					MicroModal.close('modal-1')
+				} else {
+					console.log('Error. The message was not sent')
+				}
+			} else {
+				console.log('Server error. Number: ' + req.status)
+			}
+		}
+		req.onerror = function () {
+			console.log('Request sending error')
+		}
+		req.send(new FormData(event.target))
+	}
+</script>

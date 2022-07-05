@@ -1,0 +1,211 @@
+[
+	{
+		"id": 0,
+		"project": "Poloteshko",
+		"img": "images/dist/pf_poloteshko.jpg",
+		"link": "https://poloteshko.ru",
+		"type": "Online store",
+		"description": "CMS Wordpress",
+		"design": "",
+		"stack": "PHP, Javascript, SCSS, Gulp, HTML5",
+		"like": 0
+	},
+	{
+		"id": 1,
+		"project": "Atelier Groupe",
+		"img": "images/dist/pf_atelier.jpg",
+		"link": "https://ateliergroupe.ru",
+		"type": "Company website",
+		"description": "Static page",
+		"design": "Figma",
+		"stack": "Javascript, SCSS, Gulp, HTML5",
+		"like": 0
+	},
+	{
+		"id": 2,
+		"project": "Esailor",
+		"img": "images/dist/pf_esailor.jpg",
+		"link": "https://esailor.ru",
+		"type": "Company website",
+		"description": "CMS Wordpress",
+		"design": "",
+		"stack": "PHP, Javascript, SCSS, Gulp, HTML5",
+		"like": 0
+	},
+	{
+		"id": 3,
+		"project": "Austera",
+		"img": "images/dist/pf_austera.jpg",
+		"link": "https://serdjukow.github.io/austera/",
+		"type": "Training project",
+		"description": "Static page",
+		"design": "Avacode",
+		"stack": "Javascript, SCSS, Gulp, HTML5",
+		"like": 0
+	},
+	{
+		"id": 4,
+		"project": "ComonGames",
+		"img": "images/dist/pf_comongames.jpg",
+		"link": "https://comongames.ru/",
+		"type": "Company website",
+		"description": "CMS Wordpress",
+		"design": "",
+		"stack": "PHP, Javascript, SCSS, Gulp, HTML5",
+		"like": 0
+	},
+	{
+		"id": 5,
+		"project": "Organic",
+		"img": "images/dist/pf_organic.jpg",
+		"link": "https://serdjukow.github.io/-organic/",
+		"type": "Training project",
+		"description": "Static page",
+		"design": "Figma",
+		"stack": "Javascript, SCSS, Bootstrap, Gulp, HTML5",
+		"like": 0
+	},
+	{
+		"id": 6,
+		"project": "Custom slider",
+		"img": "images/dist/pf_custom_slider.png",
+		"link": "https://codepen.io/Sergej__S/full/yLgvXKb",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "",
+		"stack": "Javascript, CSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 7,
+		"project": "Users Gallery",
+		"img": "images/dist/pf_gallery.png",
+		"link": "https://codepen.io/Sergej__S/full/JjEZWQx",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "",
+		"stack": "Javascript, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 8,
+		"project": "Giftsexpert",
+		"img": "images/dist/2021-06-23_16-42-29.png",
+		"link": "https://promo.giftsexpert.ru/",
+		"type": "Company website",
+		"description": "Static page",
+		"design": "Figma",
+		"stack": "PHP, Javascript, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 9,
+		"project": "propets.space",
+		"img": "images/dist/2021-11-20_17-04-51.png",
+		"link": "https://propets.space/",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "AdobeXD",
+		"stack": "React, Javascript, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 10,
+		"project": "propets.space prototype",
+		"img": "images/dist/2021-11-20_17-04-51.png",
+		"link": "https://propets.space/prototype",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "AdobeXD",
+		"stack": "React, Javascript, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 11,
+		"project": "s3xycars",
+		"img": "images/dist/2021-11-20_16-18-29.png",
+		"link": "https://s3xycars.ru/",
+		"type": "Company website",
+		"description": "CMS Wordpress",
+		"design": "Figma",
+		"stack": "PHP, Javascript, Gulp/Webpack, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 12,
+		"project": "Yanaastro",
+		"img": "images/dist/2021-11-20_16-20-00.png",
+		"link": "https://yanaastro.ru/",
+		"type": "Personal website",
+		"description": "Dynamic page",
+		"design": "",
+		"stack": "PHP, Javascript, Gulp/Webpack, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 13,
+		"project": "SCAF Automobile",
+		"img": "images/dist/2021-12-09_19-45-31.png",
+		"link": "https://serdjukow.github.io/scaf-automobile/",
+		"type": "Company website",
+		"description": "Static page",
+		"design": "Figma",
+		"stack": "Javascript, Gulp/Webpack, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 14,
+		"project": "Internet-shop",
+		"img": "images/dist/2021-12-27_21-28-54.png",
+		"link": "https://sub.serdjukow.eu/",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "Desctop only",
+		"stack": "Javascript, Webpack, Bootstrap, HTML5",
+		"like": 0
+	},
+	{
+		"id": 15,
+		"project": "Connept",
+		"img": "images/dist/concept.png",
+		"link": "https://serdjukow.eu/concept/",
+		"type": "App page",
+		"description": "Static page",
+		"design": "",
+		"stack": "Javascript, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 16,
+		"project": "Configurator",
+		"img": "images/dist/configurator.png",
+		"link": "https://serdjukow.eu/configurator/",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "",
+		"stack": "Javascript, SCSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 17,
+		"project": "Iphone",
+		"img": "images/dist/iphone.png",
+		"link": "https://serdjukow.eu/iphone/",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "",
+		"stack": "Javascript, CSS, HTML5",
+		"like": 0
+	},
+	{
+		"id": 18,
+		"project": "Showcase",
+		"img": "images/dist/showcase.png",
+		"link": "https://serdjukow.eu/showcase/",
+		"type": "Training project",
+		"description": "Dynamic page",
+		"design": "",
+		"stack": "Javascript, CSS, HTML5",
+		"like": 0
+	}
+]

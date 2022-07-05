@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Portfolio</title>
+	<meta name="description" content="Serdjukow.eu - WEB Development">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+<div id="cursor"></div>
+
+<header class="header home-header">
+	<div class="top-line">
+		<a href="/" class="logo">
+			<span class="logo__img-wrapper">
+				<div class="logo__img-container">
+					<img src="images/dist/logo3.2.svg" alt="serdjukow.eu" class="logo__image" />
+				</div>
+			</span>
+			<div class="logo__text">
+				<span class="logo__text-title">HATTATSU GROUP</span>
+			</div>
+		</a>
+		<div class="top-line__decoration"></div>
+		<div class="top-line__contacts">
+			<span class="top-line__mail">
+				<a class="mail__link" href="mailto:info@serdjukov.eu">info@serdjukov.eu</a>
+			</span>
+			<span class="top-line__separator"></span>
+			<span class="top-line__address">Berlin<span class="top-line__text">Germany</span></span>
+		</div>
+		<div class="top-line__decoration"></div>
+		<div class="menu__button-container">
+			<div class="menu__button">
+				<div class="menu__icon">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__content">
+		<aside class="home-aside">
+			<div class="home-aside__left">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a data-goto=".page__section_1" href="portfolio.html" class="menu__link">Portfolio</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="home-aside__right">
+				<div class="home-aside__decoration"></div>
+				<div class="home-aside__soc">
+					<div class="home-aside__soc-items">
+						<a href="https://www.linkedin.com/in/sergej-serdjukow-a55bb0b4/" class="soc-item" target="_blank"
+							><img src="images/dist/soc/linkedin.svg" alt="Профили компании"
+						/></a>
+						<a href="https://github.com/serdjukow" class="soc-item" target="_blank"><img src="images/dist/soc/github.svg" alt="Профили компании" /></a>
+						<a href="https://codepen.io/Sergej__S" class="soc-item" target="_blank"><img src="images/dist/soc/codepen.svg" alt="Профили компании" /></a>
+						<a href="https://www.xing.com/profile/Sergej_Serdjukow/cv" class="soc-item" target="_blank"
+							><img src="images/dist/soc/xing.svg" alt="Профили компании"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<div class="slider-container">
+			<div class="gallery">
+				<div class="gallery__menu"></div>
+				<div class="gallery__content gallery__items"></div>
+			</div>
+
+			<div class="slider-bottom">
+				<div class="slider-share">
+					<div class="slider-share__items">
+						<div class="home-aside__share-icon"></div>
+
+						<a
+							href="https://vk.com/share.php?url=http%3A%2F%2Flocalhost%3A3000%2F%23&amp;title=serdjukow.eu&amp;utm_source=share2"
+							class="soc-item slider-share__item"
+							target="_blank"
+							><img src="images/dist/soc/vk-brands.svg" alt="Поделиться"
+						/></a>
+						<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//serdjukow.eu" class="soc-item slider-share__item" target="_blank"
+							><img src="images/dist/soc/facebook-f-brands.svg" alt="Поделиться"
+						/></a>
+						<a href="https://twitter.com/intent/tweet?text=https%3A//serdjukow.eu" class="soc-item slider-share__item" target="_blank"
+							><img src="images/dist/soc/twitter-brands.svg" alt="Поделиться"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-gear"></div>
+	</div>
+</header>
+
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1">
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-1-title">Leave a request</h2>
+				<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+			</header>
+			<form enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'sendemail.php')">
+				<main class="modal__content" id="modal-1-content">
+					<input class="form-input modal__input" type="text" name="name" placeholder="Your name..." />
+					<input class="form-input modal__input" type="text" name="phone" placeholder="Your phone number..." required />
+					<textarea class="form-input modal__input" name="message" placeholder="Message..."></textarea>
+				</main>
+				<footer class="modal__footer">
+					<button class="button"><span class="button__text">Send</span></button>
+				</footer>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1">
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-1-title">Policy</h2>
+			</header>
+			<main class="modal__content" id="modal-1-content">
+				<a href="./politica_de.html" target="_blank">Datenschutzerklärung</a>
+			</main>
+			<footer class="modal__footer">
+				<div class="button" data-micromodal-close><span class="button__text">confirmation</span></div>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<script>
+	const callBackThanks = document.querySelector('.callback__thanks')
+	function send(event, php) {
+		event.preventDefault ? event.preventDefault() : (event.returnValue = false)
+		var req = new XMLHttpRequest()
+		req.open('POST', php, true)
+		req.onload = function () {
+			if (req.status >= 200 && req.status < 400) {
+				json = JSON.parse(this.response)
+				if (json.result == 'success') {
+					event.target.reset()
+					MicroModal.close('modal-1')
+				} else {
+					console.log('Error. The message was not sent')
+				}
+			} else {
+				console.log('Server error. Number: ' + req.status)
+			}
+		}
+		req.onerror = function () {
+			console.log('Request sending error')
+		}
+		req.send(new FormData(event.target))
+	}
+</script>
+
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>
