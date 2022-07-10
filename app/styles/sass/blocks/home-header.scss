@@ -619,7 +619,9 @@ html {
 	right: calc(23.5% - 239px);
 	top: 50%;
 	margin-top: -239px;
-	background-image: url(../images/dist/gear.svg);
+	background-image: url(../images/dist/gear-h.svg);
+	background-position: center;
+	background-size: cover;
 	@include media-breakpoint-down(sm) {
 		display: none;
 	}
