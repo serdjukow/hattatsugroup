@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	swiperText.on('slideNextTransitionStart', function () {
 		gsap.to(gear, 2.6, {
-			rotation: '+=45',
+			rotation: '-=45',
 			ease: Power2.easeOut,
 		})
 	})
 
 	swiperText.on('slidePrevTransitionStart', function () {
 		gsap.to(gear, 2.6, {
-			rotation: '-=45',
+			rotation: '+=45',
 			ease: Power2.easeOut,
 		})
 	})
